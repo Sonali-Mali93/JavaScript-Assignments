@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment 1
+	</title>
+
+	<!--script src="assignment1.js"></script-->
+
+	<script type="text/javascript">
+
+		//Question 1
+		document.write("Question 1 <br>");
+		document.write("-----------------------");
+		document.write("<br>");
+
+		const michael = "People say I'm the best boss.";
+		document.write(michael.length,"<br>");
+		document.write(michael.slice(15),"<br>");
+		document.write(michael.slice(11, 29),"<br>");
+		document.write(michael.slice(11, -1),"<br>");
+		document.write(michael.slice(-5),"<br>");
+		document.write(michael.slice(-10, -6),"<br>");
+
+		document.write("<br>");
+		// Question 2
+
+		document.write("Question 2","<br>");
+
+		document.write("-----------------------");
+		document.write("<br>");
+
+		let dukeOfHastingsSays = "I burn for you.";
+		let newArray = dukeOfHastingsSays.toLowerCase().split(" ");
+		document.write("Lowercase = ",newArray,"<br>");
+
+		let newStringWithSpace = newArray.join(" ")
+		document.write("join = ",newStringWithSpace,"<br>");
+
+		let newStringWithoutSpace = newArray.join("")
+		document.write("join  = ",newStringWithSpace,"<br>");
+		document.write("<br>");
+		//Question 3
+
+		document.write("Question 3 <br>");
+
+		document.write("-----------------------");
+		document.write("<br>");
+
+		let starHollows = ['Lorelai', 'Rory', 'Luke', 'Lane', 'Kirk', 'Taylor'];
+		let removed = starHollows.splice(1);
+		document.write(removed,"<br>");
+
+
+		let beverlyHillsGang = ['Brandon', 'Brenda', 'Dylan', 'Andrea', 'Steve', 'Kelly', 'Donna',
+'David'];
+		let removed1 = beverlyHillsGang.splice(1, 2);
+		document.write(removed1,"<br>");
+
+		let seinfeld = ['Jerry', 'George', 'Kramer', 'Newman', 'Elaine'];
+		let removed2 = seinfeld.splice(-2, 1);
+		document.write(removed2);
+
+		let brooklynNineNine = ['Jake', 'Amy', 'Charles','Rosa', 'Captain Holt', 'Gina', 'Terry'];
+		let removedAndInserted = brooklynNineNine.splice(5, 1, 'Hitchcock', 'Scully');
+		document.write(removedAndInserted,"<br>");
+
+		let friends = ['Ross', 'Rachel', 'Joey', 'Chandler', 'Monica', 'Phoebe'];
+		let insertedOnly = friends.splice(1, 0, 'Gunther', 'Carol', 'Susan')
+		document.write(insertedOnly,"<br>");
+
+
+
+	</script>
+	
+</head>
+<body>
+
+</body>
+</html>
